@@ -1,12 +1,16 @@
 # ------------------------------------------------------------
 # WriteAble – UI-Only Prototype (Streamlit)
-# This app shows a basic, accessible UI for your tool.
-# It does NOT do real analysis yet – it's just the front-end
-# so your teammates can see the layout and flow.
 # ------------------------------------------------------------
 
 import streamlit as st
 from pathlib import Path
+import os   # needed for directory check
+
+# ------------------------------------------------------------
+# DEBUG: SHOW WHERE STREAMLIT IS RUNNING FROM
+# ------------------------------------------------------------
+st.sidebar.write("📁 Running from directory:", os.getcwd())
+st.sidebar.write("📄 Script file:", __file__)
 
 # ------------------------------------------------------------
 # BASIC PAGE CONFIG (title, icon, layout)
